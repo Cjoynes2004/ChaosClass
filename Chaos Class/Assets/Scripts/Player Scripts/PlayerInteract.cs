@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour
 {
-    public Transform cameraTransform; // Assign the player's camera in the Inspector
-    public float interactDistance = 2f;
-    public MeshFilter handMeshFilter; // MeshFilter of the hand model
-    public MeshRenderer handMeshRenderer; // MeshRenderer of the hand model
+    public Transform cameraTransform; 
+    public MeshFilter handMeshFilter;
+    public MeshRenderer handMeshRenderer;
 
     private InteractableObject heldObject = null;
     private Mesh defaultHandMesh;
@@ -16,10 +15,10 @@ public class PlayerInteract : MonoBehaviour
     void Start()
     {
         if (handMeshFilter != null)
-            defaultHandMesh = handMeshFilter.mesh; // Store the default hand mesh
+            defaultHandMesh = handMeshFilter.mesh; 
 
         if (handMeshRenderer != null)
-            defaultHandMaterial = handMeshRenderer.material; // Store the default material
+            defaultHandMaterial = handMeshRenderer.material;
     }
 
     void Update()
@@ -35,33 +34,78 @@ public class PlayerInteract : MonoBehaviour
                 DropObject();
             }
         }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (heldObject == null)
+            {
+                CallOnStudent(true);
+            }
+            else
+            {
+                heldObject.Interact();
+            }   
+        }
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            CallOnStudent(false);
+        }
     }
 
     void TryPickupObject()
     {
-        RaycastHit hit;
-        if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out hit, interactDistance))
+        GameObject target = null;
+        target = ReturnPlayerView(2);
+        InteractableObject interactable = target.GetComponent<InteractableObject>();
+
+        if (interactable != null)
         {
-            InteractableObject interactable = hit.collider.GetComponent<InteractableObject>();
-            if (interactable != null)
-            {
-                heldObject = interactable;
-                handMeshFilter.mesh = interactable.objectMesh; // Change hand model
-                handMeshRenderer.material = interactable.objectMaterial; // Change hand material
-                interactable.gameObject.SetActive(false); // Hide object in world
-            }
+            heldObject = interactable;
+            handMeshFilter.mesh = interactable.objectMesh; 
+            handMeshRenderer.material = interactable.objectMaterial; 
+            interactable.gameObject.SetActive(false); 
         }
+
     }
 
     void DropObject()
     {
         if (heldObject != null)
         {
-            handMeshFilter.mesh = defaultHandMesh; // Restore default hand model
-            handMeshRenderer.material = defaultHandMaterial; // Restore default material
-            heldObject.gameObject.SetActive(true); // Show the object again
+            handMeshFilter.mesh = defaultHandMesh; 
+            handMeshRenderer.material = defaultHandMaterial; 
+            heldObject.gameObject.SetActive(true); 
             heldObject.transform.position = cameraTransform.position + cameraTransform.forward * 1f; // Place in front of player
             heldObject = null;
+        }
+    }
+
+    public GameObject ReturnPlayerView(float viewDistance)
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out hit, viewDistance))
+        {
+            return hit.collider.gameObject;
+        }
+        return null;
+
+    }
+    
+    private void CallOnStudent(bool behavior)
+    {
+        GameObject student = ReturnPlayerView(10);
+        StudentQuestion question = student.GetComponent<StudentQuestion>();
+        if (student.GetComponent<StudentQuestion>() != null)
+        {
+            if ((question.isQuestion && behavior) || (question.isMisbehaving && !behavior))
+            {
+                question.CalledOn();
+            }
+            else
+            {
+                //Add taking away points.
+            }
         }
     }
 }
