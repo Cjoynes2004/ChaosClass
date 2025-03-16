@@ -62,10 +62,12 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Interactacbles\InteractableObject.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraPos.cs" />
+    <Compile Include="Assets\Scripts\Student Scripts\StudentManager.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\PlayerCamera.cs" />
     <Compile Include="Assets\Scripts\Main Menu\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\PlayerInteract.cs" />
+    <Compile Include="Assets\Scripts\Student Scripts\StudentQuestion.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
