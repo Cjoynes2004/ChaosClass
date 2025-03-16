@@ -123,10 +123,14 @@ NavMeshSettings:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &95965075
 =======
 --- !u!1 &334268892
 >>>>>>> a76f0cef8e59fd46d2f64846ba08e6670e1eba25
+=======
+--- !u!1 &334268892
+>>>>>>> 5f3d5da79f3f83fab7a9fef08e6bb5d8554dd6c1
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -135,12 +139,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - component: {fileID: 95965076}
   - component: {fileID: 95965078}
   - component: {fileID: 95965077}
   m_Layer: 5
   m_Name: Text (TMP)
 =======
+=======
+>>>>>>> 5f3d5da79f3f83fab7a9fef08e6bb5d8554dd6c1
   - component: {fileID: 334268894}
   - component: {fileID: 334268893}
   - component: {fileID: 334268896}
@@ -149,12 +156,16 @@ GameObject:
   - component: {fileID: 334268898}
   m_Layer: 0
   m_Name: Student Manager
+<<<<<<< HEAD
 >>>>>>> a76f0cef8e59fd46d2f64846ba08e6670e1eba25
+=======
+>>>>>>> 5f3d5da79f3f83fab7a9fef08e6bb5d8554dd6c1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!224 &95965076
 RectTransform:
@@ -181,11 +192,15 @@ MonoBehaviour:
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &95965077
+=======
+--- !u!114 &334268893
+>>>>>>> 5f3d5da79f3f83fab7a9fef08e6bb5d8554dd6c1
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 95965075}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -271,10 +286,22 @@ MonoBehaviour:
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &95965078
 CanvasRenderer:
+=======
+  m_GameObject: {fileID: 334268892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80062a012bd8b524e98ed197cd7e367d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numStudents: 10
+--- !u!4 &334268894
+Transform:
+>>>>>>> 5f3d5da79f3f83fab7a9fef08e6bb5d8554dd6c1
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 95965075}
   m_CullTransparentMesh: 1
 --- !u!1 &161372820
@@ -514,6 +541,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> 5f3d5da79f3f83fab7a9fef08e6bb5d8554dd6c1
   m_GameObject: {fileID: 334268892}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -622,7 +651,10 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
+<<<<<<< HEAD
 >>>>>>> a76f0cef8e59fd46d2f64846ba08e6670e1eba25
+=======
+>>>>>>> 5f3d5da79f3f83fab7a9fef08e6bb5d8554dd6c1
 --- !u!1 &393424502
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,7 +924,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 161372821}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1450,7 +1482,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 161372821}
   - {fileID: 1916348402}
   - {fileID: 1890158128}
   - {fileID: 2126406540}
@@ -1473,29 +1504,15 @@ GameObject:
   - component: {fileID: 1326144793}
   - component: {fileID: 1326144792}
   - component: {fileID: 1326144791}
-  - component: {fileID: 1326144790}
   - component: {fileID: 1326144795}
+  - component: {fileID: 1326144796}
   m_Layer: 0
-  m_Name: Interactable
+  m_Name: Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1326144790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1326144789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ff37b47c70320646a4b087c9a0276d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectMesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
-  objectMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!135 &1326144791
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1609,6 +1626,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1326144796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326144789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41ee09e0ef0b9bd44868eabce4ddb931, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballMesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  ballMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!1 &1333377821
 GameObject:
   m_ObjectHideFlags: 0
@@ -1751,7 +1782,7 @@ RectTransform:
   m_Children:
   - {fileID: 1105549212}
   - {fileID: 1137666478}
-  m_Father: {fileID: 368288525}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1962,7 +1993,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraTransform: {fileID: 1333377822}
-  interactDistance: 2
   handMeshFilter: {fileID: 1130982703}
   handMeshRenderer: {fileID: 1130982702}
 --- !u!1 &1878792576
@@ -2129,8 +2159,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.019999998, y: 0.025, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 95965076}
+  m_Children: []
   m_Father: {fileID: 1137666478}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2638,8 +2667,15 @@ SceneRoots:
   - {fileID: 1060093166}
   - {fileID: 1326144794}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 368288525}
   - {fileID: 436220780}
 =======
   - {fileID: 334268894}
 >>>>>>> a76f0cef8e59fd46d2f64846ba08e6670e1eba25
+=======
+  - {fileID: 334268894}
+  - {fileID: 436220780}
+  - {fileID: 901393139}
+  - {fileID: 1561077927}
+>>>>>>> 5f3d5da79f3f83fab7a9fef08e6bb5d8554dd6c1
