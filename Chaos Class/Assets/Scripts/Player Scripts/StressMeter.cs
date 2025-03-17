@@ -6,7 +6,10 @@ public class StressMeter : MonoBehaviour
     public Image AddStress; 
     private float LevelofStress = 0f; 
     public float RateofIncrease = 0.1f;
-    public float MaxAmountofStress = 1f; 
+    public float MaxAmountofStress = 1f;
+
+    public GameObject Gameoverpanel;
+    public Gamestate Gamestatemanager;
 
     void Update()
     {
@@ -21,7 +24,15 @@ public class StressMeter : MonoBehaviour
         if (LevelofStress >= MaxAmountofStress)
         {
             Debug.Log("Your stress meter is maxed out");
+            Gameover();
         }
+    }
+
+    void Gameover()
+    {
+        Gameoverpanel.SetActive(true);
+        Cursor.visible = true;       // Show the cursor
+        Cursor.lockState = CursorLockMode.None;
     }
 
     

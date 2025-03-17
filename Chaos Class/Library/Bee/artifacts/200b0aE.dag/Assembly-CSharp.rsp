@@ -355,6 +355,7 @@
 "Assets/Scripts/Interactacbles/Ball.cs"
 "Assets/Scripts/Interactacbles/InteractableObject.cs"
 "Assets/Scripts/Main Menu/SceneLoader.cs"
+"Assets/Scripts/Player Scripts/Gamestate.cs"
 "Assets/Scripts/Player Scripts/PlayerCamera.cs"
 "Assets/Scripts/Player Scripts/PlayerInteract.cs"
 "Assets/Scripts/Player Scripts/PlayerMovement.cs"
