@@ -352,6 +352,7 @@
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.32f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.32f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/Camera/CameraPos.cs"
+"Assets/Scripts/Interactacbles/Ball.cs"
 "Assets/Scripts/Interactacbles/InteractableObject.cs"
 "Assets/Scripts/Main Menu/SceneLoader.cs"
 "Assets/Scripts/Player Scripts/PlayerCamera.cs"
