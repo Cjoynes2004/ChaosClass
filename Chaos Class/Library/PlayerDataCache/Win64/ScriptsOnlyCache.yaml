@@ -3,10 +3,12 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Ball
     - CameraPos
+    - Chalk
     - PlayerCamera
     - PlayerInteract
     - PlayerMovement
     - SceneLoader
+    - StudentManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro:
@@ -161,6 +163,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 89
@@ -188,6 +194,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 19430}
     - Class: 114
+      Script: {instanceID: 19826}
+    - Class: 114
       Script: {instanceID: 20132}
     - Class: 114
       Script: {instanceID: 20680}
@@ -195,6 +203,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 20836}
     - Class: 114
       Script: {instanceID: 21154}
+    - Class: 114
+      Script: {instanceID: 30012}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -644,7 +654,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: e3762b7377727ffbe67669178fa52dd9
+      Hash: bd32725e3eb343dc9f68c63cc31159ad
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Ball
@@ -1092,6 +1102,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 49018e2ac11e4af56fff71fe59c2faf5
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Chalk
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity

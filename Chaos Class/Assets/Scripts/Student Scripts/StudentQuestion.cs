@@ -4,7 +4,7 @@ public class StudentQuestion : MonoBehaviour
 {
     public bool isQuestion = false;
     public bool isMisbehaving = false;
-    public int chance = 1000;
+    public int chance = 10000;
     // Start is called before the first frame update
     void Start()
     {

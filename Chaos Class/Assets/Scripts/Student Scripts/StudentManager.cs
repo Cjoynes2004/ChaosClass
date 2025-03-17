@@ -6,6 +6,7 @@ public class StudentManager : MonoBehaviour
 {
     public int numStudents;
     private List<GameObject> studentList;
+    public bool cooldown = false;
     
     //Creates a list of student objects, each a copy of the manager (hidden off the game world)
     void Start()
@@ -52,5 +53,12 @@ public class StudentManager : MonoBehaviour
             studentList.Add(student);
         }
         
+    }
+    public IEnumerator Cooldown(float time)
+    {
+        cooldown = true; // Set cooldown to true
+        yield return new WaitForSeconds(time); // Wait for 'time' seconds
+        cooldown = false; // Reset cooldown
+        Debug.Log("Cooldown ended. You can interact again.");
     }
 }
