@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{DD18B489-5A7F-F2CD-B582-133001FBEC4E}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player Scripts/StressMeter.cs">
+    <Files>
+      <File FileName="Assets/StressMeter.cs" Line="41" Column="1" />
+      <File FileName="Assets/Scripts/Player Scripts/StressMeter.cs" Line="18" Column="44" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Chaos Class" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Player Scripts" expanded="True">
+                  <Node name="StressMeter.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Unity" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2c420052-3c45-432b-869d-28df5f6e440f" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
