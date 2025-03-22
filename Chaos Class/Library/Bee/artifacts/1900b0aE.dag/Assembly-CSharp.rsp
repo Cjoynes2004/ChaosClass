@@ -357,6 +357,11 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.32f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.32f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/ChoiceSystem.cs"
+"Assets/DialingSystem.cs"
+"Assets/GameEvents.cs"
+"Assets/KidsCharacterFree/Scripts/KidsScript.cs"
+"Assets/Phoenix3D/Demo/Scripts/MaterialSwithcer.cs"
 "Assets/Scripts/Camera/CameraPos.cs"
 "Assets/Scripts/Interactacbles/Ball.cs"
 "Assets/Scripts/Interactacbles/Chalk.cs"
@@ -366,8 +371,11 @@
 "Assets/Scripts/Player Scripts/PlayerCamera.cs"
 "Assets/Scripts/Player Scripts/PlayerInteract.cs"
 "Assets/Scripts/Player Scripts/PlayerMovement.cs"
+"Assets/Scripts/Player Scripts/StressMeter.cs"
 "Assets/Scripts/Student Scripts/StudentManager.cs"
 "Assets/Scripts/Student Scripts/StudentQuestion.cs"
+"Assets/SoundManager 2.cs"
+"Assets/SoundManager.cs"
 -langversion:9.0
 /deterministic
 /optimize+

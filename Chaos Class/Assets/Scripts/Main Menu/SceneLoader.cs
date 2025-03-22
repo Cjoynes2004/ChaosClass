@@ -7,7 +7,7 @@ public class SceneLoader : MonoBehaviour
 {
     public void LoadGameScene()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("classroom");
     }
 
     public void QuitGame()

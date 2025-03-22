@@ -60,16 +60,24 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.32f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\KidsCharacterFree\Scripts\KidsScript.cs" />
+    <Compile Include="Assets\GameEvents.cs" />
+    <Compile Include="Assets\SoundManager 2.cs" />
     <Compile Include="Assets\Scripts\Interactacbles\InteractableObject.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraPos.cs" />
     <Compile Include="Assets\Scripts\Student Scripts\StudentManager.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Phoenix3D\Demo\Scripts\MaterialSwithcer.cs" />
     <Compile Include="Assets\Scripts\Interactacbles\Chalk.cs" />
     <Compile Include="Assets\Scripts\Interactacbles\Ball.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\PlayerCamera.cs" />
+    <Compile Include="Assets\Scripts\Player Scripts\StressMeter.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\PlayerInteract.cs" />
     <Compile Include="Assets\Scripts\Interactacbles\Chalkboard.cs" />
     <Compile Include="Assets\Scripts\Main Menu\SceneLoader.cs" />
+    <Compile Include="Assets\DialingSystem.cs" />
+    <Compile Include="Assets\SoundManager.cs" />
+    <Compile Include="Assets\ChoiceSystem.cs" />
     <Compile Include="Assets\Scripts\Student Scripts\StudentQuestion.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -79,10 +87,12 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\KidsCharacterFree\Documents\readme_txt.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\Kansai University (Takatsuki)\Shader\BothSides.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />

@@ -157,6 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numStudents: 10
+  cooldown: 0
 --- !u!65 &115278665
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1016,7 +1017,7 @@ TerrainCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_TerrainData: {fileID: 15600000, guid: cb66f473518667a4d8b62dd0ff6aecda, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: c49b6ebcd6dcff64dadd30f662de986a, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &1060093165
 Terrain:
@@ -1027,7 +1028,7 @@ Terrain:
   m_GameObject: {fileID: 1060093163}
   m_Enabled: 1
   serializedVersion: 6
-  m_TerrainData: {fileID: 15600000, guid: cb66f473518667a4d8b62dd0ff6aecda, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: c49b6ebcd6dcff64dadd30f662de986a, type: 2}
   m_TreeDistance: 5000
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
