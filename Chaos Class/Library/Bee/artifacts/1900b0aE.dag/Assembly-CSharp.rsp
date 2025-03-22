@@ -366,6 +366,7 @@
 "Assets/Scripts/Player Scripts/PlayerCamera.cs"
 "Assets/Scripts/Player Scripts/PlayerInteract.cs"
 "Assets/Scripts/Player Scripts/PlayerMovement.cs"
+"Assets/Scripts/Player Scripts/StressMeter.cs"
 "Assets/Scripts/Student Scripts/StudentManager.cs"
 "Assets/Scripts/Student Scripts/StudentQuestion.cs"
 -langversion:9.0

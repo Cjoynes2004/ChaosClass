@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Interactacbles\Chalk.cs" />
     <Compile Include="Assets\Scripts\Interactacbles\Ball.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\PlayerCamera.cs" />
+    <Compile Include="Assets\Scripts\Player Scripts\StressMeter.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\PlayerInteract.cs" />
     <Compile Include="Assets\Scripts\Interactacbles\Chalkboard.cs" />
     <Compile Include="Assets\Scripts\Main Menu\SceneLoader.cs" />
