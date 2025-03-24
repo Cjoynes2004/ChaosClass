@@ -63,6 +63,7 @@
     <Compile Include="Assets\KidsCharacterFree\Scripts\KidsScript.cs" />
     <Compile Include="Assets\GameEvents.cs" />
     <Compile Include="Assets\SoundManager 2.cs" />
+    <Compile Include="Assets\Scripts\Player Scripts\Gamestate.cs" />
     <Compile Include="Assets\Scripts\Interactacbles\InteractableObject.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraPos.cs" />
     <Compile Include="Assets\Scripts\Student Scripts\StudentManager.cs" />
