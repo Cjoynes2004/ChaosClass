@@ -7,6 +7,9 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed;
     public Transform orientation;
 
+    public Gamestate Gamestatemanager;
+
+
     float horizontalInput;
     float verticalInput;
 
@@ -18,6 +21,8 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
     }
@@ -25,8 +30,14 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        Debug.Log("IsGameOver: " + Gamestatemanager.Isgameover);
+
+
+       
         GetInput();
         SpeedControl();
+        
     }
 
     private void FixedUpdate()

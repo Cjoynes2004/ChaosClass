@@ -19,9 +19,7 @@ public class Gamestate : MonoBehaviour
     {
         Debug.Log("Restart button clicked!");
 
-
-        Time.timeScale = 1f; // Ensure the game is not paused
-        SceneManager.LoadScene("classroom");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void LoadMenu()
