@@ -5,10 +5,11 @@ public class StudentQuestion : MonoBehaviour
     public bool isQuestion = false;
     public bool isMisbehaving = false;
     public int chance = 10000;
+    Animator animator;
     // Start is called before the first frame update
     void Start()
     {
-
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -19,8 +20,6 @@ public class StudentQuestion : MonoBehaviour
 
     void studentPrompt()
     {
-        Vector3 test = new Vector3(1, 10, 1);
-        Vector3 test1 = new Vector3(1, 1, 10);
         if (!isQuestion && !isMisbehaving)
         {
             if (Random.Range(1, chance) == 1)
@@ -28,12 +27,12 @@ public class StudentQuestion : MonoBehaviour
                 if (Random.Range(1, 3)  == 1)
                 {
                     isQuestion = true;
-                    transform.localScale = test;
+                    animator.SetBool("handRaised", true);
                 }
                 else
                 {
                     isMisbehaving = true;
-                    transform.localScale = test1;
+                    animator.SetBool("isMisbehaving", true);
                 }
                 
             }
@@ -44,6 +43,7 @@ public class StudentQuestion : MonoBehaviour
     {
         isQuestion = false;
         isMisbehaving = false;
-        transform.localScale = new Vector3(1, 1, 1);
+        animator.SetBool("handRaised", false);
+        animator.SetBool("isMisbehaving", false);
     }
 }

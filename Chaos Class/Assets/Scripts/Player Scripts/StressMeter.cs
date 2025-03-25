@@ -5,7 +5,7 @@ public class StressMeter : MonoBehaviour
 {
     public Image AddStress;
     private float LevelofStress = 0f;
-    public float RateofIncrease = 0.1f;
+    public float RateofIncrease = 0f;
     public float MaxAmountofStress = 1f;
 
     public GameObject Gameoverpanel;

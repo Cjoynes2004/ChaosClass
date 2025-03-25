@@ -16,6 +16,7 @@ public class StudentManager : MonoBehaviour
         MeshRenderer parentMeshRenderer = GetComponent<MeshRenderer>();
         MeshCollider parentCollider = GetComponent<MeshCollider>();
         Rigidbody parentRigidbody = GetComponent<Rigidbody>();
+        Animator parentAnimator = GetComponent<Animator>();
 
         for (int i = 0; i < numStudents; i++)
         {
@@ -27,6 +28,7 @@ public class StudentManager : MonoBehaviour
             MeshRenderer childMeshRenderer = student.AddComponent<MeshRenderer>();
             MeshCollider childMeshCollider = student.AddComponent<MeshCollider>();
             Rigidbody childRigidbody = student.AddComponent<Rigidbody>();
+            Animator childAnimator = student.AddComponent<Animator>();
 
             childMeshFilter.sharedMesh = parentMeshFilter.sharedMesh;
             childMeshRenderer.sharedMaterial = parentMeshRenderer.sharedMaterial;
@@ -35,6 +37,7 @@ public class StudentManager : MonoBehaviour
             childMeshCollider.isTrigger = parentCollider.isTrigger;
             childMeshCollider.providesContacts = parentCollider.providesContacts;
             childMeshCollider.sharedMesh = parentCollider.sharedMesh;
+            childAnimator.avatar = parentAnimator.avatar;
 
             childRigidbody.mass = parentRigidbody.mass;
             childRigidbody.drag = parentRigidbody.drag;

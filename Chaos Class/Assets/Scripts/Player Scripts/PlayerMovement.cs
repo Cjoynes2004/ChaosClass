@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
 
-        Debug.Log("IsGameOver: " + Gamestatemanager.Isgameover);
+        //Debug.Log("IsGameOver: " + Gamestatemanager.Isgameover);
 
 
        
