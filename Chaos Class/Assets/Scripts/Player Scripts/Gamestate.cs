@@ -12,14 +12,20 @@ public class Gamestate : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Time.timeScale = 1f; // Ensure the game starts normally
+
     }
 
     public void Restartgame()
     {
         Debug.Log("Restart button clicked!");
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+        Time.timeScale = 1f; // Ensure the game is not paused
+        SceneManager.LoadScene("classroom");
+
+
+
     }
 
     public void LoadMenu()
