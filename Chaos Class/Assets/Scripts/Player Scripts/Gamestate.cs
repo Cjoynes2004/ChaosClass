@@ -6,14 +6,35 @@ using UnityEngine.SceneManagement;
 
 public class Gamestate : MonoBehaviour
 {
+    public static Gamestate Instance; //Singleton instance so there is only game instance
+    public bool Isgameover = false;
 
-    public bool Isgameover = false;  // Make sure this is public or use a property to get/set it
-
-    // Start is called before the first frame update
     void Start()
     {
         Time.timeScale = 1f; // Ensure the game starts normally
 
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject); 
+        }
+        else
+        {
+            Destroy(gameObject); //Destroys any additonal instances
+        }
+        ResetGameState();
+    }
+
+
+
+
+
+    public void ResetGameState() //Resets the game parameters
+    {
+        Isgameover = false;
+        Time.timeScale = 1f; 
+        Cursor.visible = false; //Makes the cursor invisible, just a visual enhancement
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void Restartgame()
@@ -30,15 +51,6 @@ public class Gamestate : MonoBehaviour
 
     public void LoadMenu()
     {
-        SceneManager.LoadScene("Menu"); // Replace with your menu scene's exact name
+        SceneManager.LoadScene("Menu"); 
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-  
-
 }

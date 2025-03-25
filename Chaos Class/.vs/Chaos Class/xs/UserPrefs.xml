@@ -1,29 +1,17 @@
 ﻿<Properties StartupConfiguration="{DD18B489-5A7F-F2CD-B582-133001FBEC4E}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player Scripts/PlayerMovement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player Scripts/PlayerCamera.cs">
     <Files>
-      <File FileName="Assets/Scripts/Player Scripts/StressMeter.cs" Line="32" Column="1" />
-      <File FileName="Assets/Scripts/Player Scripts/Gamestate.cs" Line="5" Column="1" />
-      <File FileName="Assets/Scripts/Player Scripts/PlayerMovement.cs" Line="8" Column="34" />
+      <File FileName="Assets/Scripts/Player Scripts/StressMeter.cs" Line="39" Column="33" />
+      <File FileName="Assets/Scripts/Player Scripts/Gamestate.cs" Line="17" Column="44" />
+      <File FileName="Assets/Scripts/Player Scripts/PlayerMovement.cs" Line="75" Column="53" />
+      <File FileName="Assets/Scripts/Player Scripts/GameoverUIhandler.cs" Line="14" Column="162" />
+      <File FileName="Assets/Scripts/Player Scripts/PlayerCamera.cs" Line="47" Column="10" />
+      <File FileName="Assets/Scripts/Interactacbles/InteractableObject.cs" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Chaos Class" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="Player Scripts" expanded="True">
-                  <Node name="PlayerMovement.cs" selected="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1b613263-5cf3-455e-a84c-3586060a8f72" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="bb28d89b-f185-41cd-958f-6d4903d7a8f6" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

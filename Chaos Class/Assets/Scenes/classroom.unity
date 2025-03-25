@@ -2769,7 +2769,7 @@ Canvas:
   m_GameObject: {fileID: 368288521}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 963194227}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
@@ -2842,7 +2842,7 @@ Transform:
   m_GameObject: {fileID: 393424502}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 76, z: 1220}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4691,6 +4691,7 @@ GameObject:
   m_Component:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4729,7 +4730,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.1
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -4758,12 +4759,28 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 388.29, y: 74.44, z: 1335}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d25156854f0433d46a47ab96ee470ff8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sensX: 0
+  sensY: 0
+  orientation: {fileID: 1893164675}
+  hands: {fileID: 1130982699}
 --- !u!1 &964536498
 GameObject:
   m_ObjectHideFlags: 0
@@ -5090,7 +5107,7 @@ Terrain:
   m_GameObject: {fileID: 1060093163}
   m_Enabled: 1
   serializedVersion: 6
-  m_TerrainData: {fileID: 15600000, guid: cb66f473518667a4d8b62dd0ff6aecda, type: 2}
+  m_TerrainData: {fileID: 0}
   m_TreeDistance: 5000
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
@@ -6233,7 +6250,7 @@ Transform:
   m_GameObject: {fileID: 1333377821}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.81, z: 0}
+  m_LocalPosition: {x: 79, y: 2.81, z: 30}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7997,6 +8014,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 100
   orientation: {fileID: 1893164675}
+  Gamestatemanager: {fileID: 1507748775}
 --- !u!114 &1766752888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20087,7 +20105,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1241639557160905551
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20912,6 +20930,7 @@ GameObject:
   - component: {fileID: 5296458678851207836}
   - component: {fileID: 8055041004676264033}
   - component: {fileID: 2122924741845114549}
+  - component: {fileID: 8055041004676264034}
   m_Layer: 5
   m_Name: Gameoverpanel
   m_TagString: Untagged
@@ -21955,46 +21974,20 @@ MonoBehaviour:
   MaxAmountofStress: 1
   Gameoverpanel: {fileID: 4767491617241994612}
   Gamestatemanager: {fileID: 1507748775}
---- !u!64 &8402852426995635235
-MeshCollider:
+--- !u!114 &8055041004676264034
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1077918421215487}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
+  m_GameObject: {fileID: 4767491617241994612}
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 19da5e77d15e6b246ae6557f5f4c3cbe, type: 3}
---- !u!1 &8493015188892019100
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 36980948723570660}
-  - component: {fileID: 6401770687616200094}
-  - component: {fileID: 5110952883599007785}
-  m_Layer: 0
-  m_Name: Chair
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b5f012eae1f0424695781ef456636c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  restartButton: {fileID: 8776579839707019277}
+  menuButton: {fileID: 5246044763936004896}
 --- !u!222 &8499582755868444532
 CanvasRenderer:
   m_ObjectHideFlags: 0
