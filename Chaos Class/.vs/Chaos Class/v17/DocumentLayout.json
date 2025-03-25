@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\osama\\OneDrive\\Desktop\\CIS_376_SE2\\ChaosClass\\ChaosClass\\Chaos Class\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DD18B489-5A7F-F2CD-B582-133001FBEC4E}|Assembly-CSharp.csproj|c:\\users\\osama\\onedrive\\desktop\\cis_376_se2\\chaosclass\\chaosclass\\chaos class\\assets\\scripts\\player scripts\\playercamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD18B489-5A7F-F2CD-B582-133001FBEC4E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player scripts\\playercamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD18B489-5A7F-F2CD-B582-133001FBEC4E}|Assembly-CSharp.csproj|c:\\users\\osama\\onedrive\\desktop\\cis_376_se2\\chaosclass\\chaosclass\\chaos class\\assets\\scripts\\camera\\camerapos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD18B489-5A7F-F2CD-B582-133001FBEC4E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camera\\camerapos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD18B489-5A7F-F2CD-B582-133001FBEC4E}|Assembly-CSharp.csproj|c:\\users\\osama\\onedrive\\desktop\\cis_376_se2\\chaosclass\\chaosclass\\chaos class\\assets\\scripts\\player scripts\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DD18B489-5A7F-F2CD-B582-133001FBEC4E}|Assembly-CSharp.csproj|C:\\Users\\osama\\OneDrive\\Desktop\\CIS_376_SE2\\ChaosClass\\ChaosClass\\Chaos Class\\assets\\scripts\\player scripts\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD18B489-5A7F-F2CD-B582-133001FBEC4E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player scripts\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD18B489-5A7F-F2CD-B582-133001FBEC4E}|Assembly-CSharp.csproj|c:\\users\\osama\\onedrive\\desktop\\cis_376_se2\\chaosclass\\chaosclass\\chaos class\\assets\\scripts\\player scripts\\stressmeter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DD18B489-5A7F-F2CD-B582-133001FBEC4E}|Assembly-CSharp.csproj|C:\\Users\\osama\\OneDrive\\Desktop\\CIS_376_SE2\\ChaosClass\\ChaosClass\\Chaos Class\\assets\\scripts\\player scripts\\stressmeter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD18B489-5A7F-F2CD-B582-133001FBEC4E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player scripts\\stressmeter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\osama\\OneDrive\\Desktop\\CIS_376_SE2\\ChaosClass\\ChaosClass\\Chaos Class\\Assets\\Scripts\\Main Menu\\MainMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Main Menu\\MainMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DD18B489-5A7F-F2CD-B582-133001FBEC4E}|Assembly-CSharp.csproj|C:\\Users\\osama\\OneDrive\\Desktop\\CIS_376_SE2\\ChaosClass\\ChaosClass\\Chaos Class\\assets\\scripts\\camera\\camerapos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD18B489-5A7F-F2CD-B582-133001FBEC4E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camera\\camerapos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD18B489-5A7F-F2CD-B582-133001FBEC4E}|Assembly-CSharp.csproj|c:\\users\\osama\\onedrive\\desktop\\cis_376_se2\\chaosclass\\chaosclass\\chaos class\\assets\\scripts\\player scripts\\playercamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD18B489-5A7F-F2CD-B582-133001FBEC4E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player scripts\\playercamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,24 +26,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "PlayerCamera.cs",
               "DocumentMoniker": "C:\\Users\\osama\\OneDrive\\Desktop\\CIS_376_SE2\\ChaosClass\\ChaosClass\\Chaos Class\\Assets\\Scripts\\Player Scripts\\PlayerCamera.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player Scripts\\PlayerCamera.cs",
               "ToolTip": "C:\\Users\\osama\\OneDrive\\Desktop\\CIS_376_SE2\\ChaosClass\\ChaosClass\\Chaos Class\\Assets\\Scripts\\Player Scripts\\PlayerCamera.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player Scripts\\PlayerCamera.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAQwCMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAmwBMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T08:30:32.598Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CameraPos.cs",
               "DocumentMoniker": "C:\\Users\\osama\\OneDrive\\Desktop\\CIS_376_SE2\\ChaosClass\\ChaosClass\\Chaos Class\\Assets\\Scripts\\Camera\\CameraPos.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Camera\\CameraPos.cs",
@@ -60,40 +56,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "StressMeter.cs",
               "DocumentMoniker": "C:\\Users\\osama\\OneDrive\\Desktop\\CIS_376_SE2\\ChaosClass\\ChaosClass\\Chaos Class\\Assets\\Scripts\\Player Scripts\\StressMeter.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player Scripts\\StressMeter.cs",
               "ToolTip": "C:\\Users\\osama\\OneDrive\\Desktop\\CIS_376_SE2\\ChaosClass\\ChaosClass\\Chaos Class\\Assets\\Scripts\\Player Scripts\\StressMeter.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player Scripts\\StressMeter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T07:35:04.049Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Gamestate.cs",
               "DocumentMoniker": "C:\\Users\\osama\\OneDrive\\Desktop\\CIS_376_SE2\\ChaosClass\\ChaosClass\\Chaos Class\\Assets\\Scripts\\Player Scripts\\Gamestate.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player Scripts\\Gamestate.cs",
               "ToolTip": "C:\\Users\\osama\\OneDrive\\Desktop\\CIS_376_SE2\\ChaosClass\\ChaosClass\\Chaos Class\\Assets\\Scripts\\Player Scripts\\Gamestate.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player Scripts\\Gamestate.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAiwBcAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA0wA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T07:33:19.908Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainMenu.cs",
-              "DocumentMoniker": "C:\\Users\\osama\\OneDrive\\Desktop\\CIS_376_SE2\\ChaosClass\\ChaosClass\\Chaos Class\\Assets\\Scripts\\Main Menu\\MainMenu.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Main Menu\\MainMenu.cs",
-              "ToolTip": "C:\\Users\\osama\\OneDrive\\Desktop\\CIS_376_SE2\\ChaosClass\\ChaosClass\\Chaos Class\\Assets\\Scripts\\Main Menu\\MainMenu.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Main Menu\\MainMenu.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T08:50:41.707Z"
             }
           ]
         }
