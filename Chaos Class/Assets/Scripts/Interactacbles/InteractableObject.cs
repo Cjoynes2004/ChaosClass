@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class InteractableObject : MonoBehaviour
 {
-    public  abstract Mesh objectMesh { get; }
+    public abstract Mesh objectMesh { get; }
     public abstract Material objectMaterial { get; }
-    public  abstract void Interact();
+    public abstract void Interact();
 }
