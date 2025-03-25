@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -16,13 +17,15 @@ public class PlayerMovement : MonoBehaviour
     Vector3 moveDirection;
 
     Rigidbody rb;
+    private Vector3 initialPosition;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        initialPosition = transform.position; // This is not working at the moment
+        Cursor.visible = false; //makes cursor invisible
+        Cursor.lockState = CursorLockMode.Locked; //locks cursor
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
     }
@@ -31,10 +34,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
 
-        Debug.Log("IsGameOver: " + Gamestatemanager.Isgameover);
-
-
-       
+        Debug.Log("Is game over?: " + Gamestatemanager.Isgameover);
         GetInput();
         SpeedControl();
         
@@ -63,9 +63,16 @@ public class PlayerMovement : MonoBehaviour
         Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
 
         if (flatVel.magnitude > moveSpeed)
-        {
+        { 
             Vector3 limitedVel = flatVel.normalized * moveSpeed;
             rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
         }
     }
+
+    public void ResetPlayer()
+    {
+        transform.position = initialPosition; //Not working
+        rb.velocity = Vector3.zero; //Stops movement
+    }
 }
+

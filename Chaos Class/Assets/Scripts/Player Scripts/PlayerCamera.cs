@@ -1,25 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerCamera : MonoBehaviour
 {
     public float sensX;
     public float sensY;
 
+    //private Vector3 initialPosition;
+    //private Quaternion initialRotation;
+
+
     public Transform orientation;
     public GameObject hands;
 
     float xRotation;
     float yRotation;
-    // Start is called before the first frame update
-    void Start()
+
+    void Start ()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        //initialPosition = transform.position;
+        //initialRotation = transform.rotation;
+
     }
 
-    // Update is called once per frame
     void Update()
     {
         float mouseX = Input.GetAxisRaw("Mouse X") * Time.deltaTime * sensX;
@@ -32,4 +39,15 @@ public class PlayerCamera : MonoBehaviour
         transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
         orientation.rotation = Quaternion.Euler(0, yRotation, 0);
     }
+
+    
+
+//public void ResetCamera()
+//{
+//    //transform.position = initialPosition;
+//    xRotation = 0;
+//    yRotation = 0;
+//}
+
+
 }

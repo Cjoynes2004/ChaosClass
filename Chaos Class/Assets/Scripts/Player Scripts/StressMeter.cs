@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class StressMeter : MonoBehaviour
+public class StressMeter : MonoBehaviour //handles stress, including its rate of increase, the level, max amount, and increase
 {
     public Image AddStress;
     private float LevelofStress = 0f;
@@ -14,7 +14,7 @@ public class StressMeter : MonoBehaviour
     void Update()
     {
 
-        LevelofStress += RateofIncrease * Time.deltaTime;
+        LevelofStress += RateofIncrease * Time.deltaTime; //Just a showcase that fills the stressmeter to activate the gameover menu
         LevelofStress = Mathf.Clamp(LevelofStress, 0f, MaxAmountofStress);
 
 
@@ -36,7 +36,7 @@ public class StressMeter : MonoBehaviour
 
 
         Time.timeScale = 0f; // Pause the game
-        Debug.Log("Game Over! Game is now paused.");
+        Debug.Log("Game is over.");
     }
 
 
