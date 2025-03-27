@@ -22,7 +22,7 @@ public class Chalk : InteractableObject
     {
         if (player == null) return;
 
-        if (player.ReturnIsRaycast(10, out RaycastHit hit))
+        if (player.ReturnIsRaycast(1000, out RaycastHit hit))
         {
             Chalkboard chalkboard = hit.collider.GetComponent<Chalkboard>();
 

@@ -58,14 +58,17 @@ public class PlayerInteract : MonoBehaviour
 
         if (Input.GetMouseButton(1))
         {
-            CallOnStudent(false);
+            if (heldObject == null)
+            {
+                CallOnStudent(false);
+            }   
         }
     }
 
     void TryPickupObject()
     {
         GameObject target = null;
-        target = ReturnPlayerView(2);
+        target = ReturnPlayerView(200);
         if (target != null)
         {
             InteractableObject interactable = target.GetComponent<InteractableObject>();
@@ -121,7 +124,7 @@ public class PlayerInteract : MonoBehaviour
 
     private void CallOnStudent(bool behavior)
     {
-        GameObject student = ReturnPlayerView(10);
+        GameObject student = ReturnPlayerView(1000);
         if (student != null && !studentManager.cooldown)
         {
             StudentQuestion question = student.GetComponent<StudentQuestion>();

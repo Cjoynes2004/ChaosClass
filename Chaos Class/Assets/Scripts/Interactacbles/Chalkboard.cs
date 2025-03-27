@@ -6,7 +6,7 @@ public class Chalkboard : MonoBehaviour
 {
     [SerializeField] private Texture2D chalkTexture; // Chalkboard texture
     Renderer boardRenderer;
-    private Color chalkColor = Color.black; // Chalk color
+    private Color chalkColor = Color.white; // Chalk color
 
     private void Start()
     {
@@ -36,8 +36,20 @@ public class Chalkboard : MonoBehaviour
         {
             // If a texture exists, create a writable copy
             Texture2D sourceTexture = (Texture2D)boardRenderer.material.mainTexture;
-            chalkTexture = new Texture2D(sourceTexture.width, sourceTexture.height, sourceTexture.format, false);
-            Graphics.CopyTexture(sourceTexture, chalkTexture);
+
+            // Create a new blank writable texture
+            chalkTexture = new Texture2D(sourceTexture.width, sourceTexture.height, TextureFormat.RGBA32, false);
+
+            // Blit (copy) the source texture to the new writable texture
+            RenderTexture rt = new RenderTexture(sourceTexture.width, sourceTexture.height, 0);
+            Graphics.Blit(sourceTexture, rt);
+            RenderTexture.active = rt;
+            chalkTexture.ReadPixels(new Rect(0, 0, sourceTexture.width, sourceTexture.height), 0, 0);
+            chalkTexture.Apply();
+            RenderTexture.active = null;
+            rt.Release();
+
+            // Assign the new texture
             boardRenderer.material.mainTexture = chalkTexture;
         }
     }
@@ -49,7 +61,7 @@ public class Chalkboard : MonoBehaviour
 
         Debug.Log($"Drawing at UV: {textureCoord}, Pixel: ({x}, {y})");
 
-        int brushSize = 5; // Adjust for thicker chalk strokes
+        int brushSize = 3; // Adjust for thicker chalk strokes
         for (int i = -brushSize; i <= brushSize; i++)
         {
             for (int j = -brushSize; j <= brushSize; j++)

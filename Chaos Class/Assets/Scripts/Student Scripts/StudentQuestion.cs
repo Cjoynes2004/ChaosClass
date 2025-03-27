@@ -4,7 +4,7 @@ public class StudentQuestion : MonoBehaviour
 {
     public bool isQuestion = false;
     public bool isMisbehaving = false;
-    public int chance = 10000;
+    private int chance = 10000;
     Animator animator;
     // Start is called before the first frame update
     void Start()
@@ -24,15 +24,17 @@ public class StudentQuestion : MonoBehaviour
         {
             if (Random.Range(1, chance) == 1)
             {
+                Debug.Log($"{this.name} should be animating");
+
                 if (Random.Range(1, 3)  == 1)
                 {
                     isQuestion = true;
-                    animator.SetBool("handRaised", true);
+                    animator.SetBool("handRaise", true);
                 }
                 else
                 {
                     isMisbehaving = true;
-                    animator.SetBool("isMisbehaving", true);
+                    animator.SetBool("misbehaving", true);
                 }
                 
             }
@@ -43,7 +45,7 @@ public class StudentQuestion : MonoBehaviour
     {
         isQuestion = false;
         isMisbehaving = false;
-        animator.SetBool("handRaised", false);
-        animator.SetBool("isMisbehaving", false);
+        animator.SetBool("handRaise", false);
+        animator.SetBool("misbehaving", false);
     }
 }
