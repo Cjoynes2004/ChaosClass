@@ -61,8 +61,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\KidsCharacterFree\Scripts\KidsScript.cs" />
-    <Compile Include="Assets\GameEvents.cs" />
-    <Compile Include="Assets\SoundManager 2.cs" />
+    <Compile Include="Assets\Scripts\ChoiceSystem.cs" />
+    <Compile Include="Assets\Scripts\Student Scripts\QuestionManager.cs" />
+    <Compile Include="Assets\Scripts\ToggleUI.cs" />
+    <Compile Include="Assets\Scripts\GameEvents.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\Gamestate.cs" />
     <Compile Include="Assets\Scripts\Interactacbles\InteractableObject.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraPos.cs" />
@@ -71,15 +73,15 @@
     <Compile Include="Assets\Phoenix3D\Demo\Scripts\MaterialSwithcer.cs" />
     <Compile Include="Assets\Scripts\Interactacbles\Chalk.cs" />
     <Compile Include="Assets\Scripts\Interactacbles\Ball.cs" />
+    <Compile Include="Assets\Scripts\SoundManager 2.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\PlayerCamera.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\StressMeter.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\PlayerInteract.cs" />
+    <Compile Include="Assets\Scripts\SoundManager.cs" />
     <Compile Include="Assets\Scripts\Interactacbles\Chalkboard.cs" />
     <Compile Include="Assets\Scripts\Main Menu\SceneLoader.cs" />
-    <Compile Include="Assets\DialingSystem.cs" />
-    <Compile Include="Assets\SoundManager.cs" />
-    <Compile Include="Assets\ChoiceSystem.cs" />
     <Compile Include="Assets\Scripts\Student Scripts\StudentQuestion.cs" />
+    <Compile Include="Assets\Scripts\DialingSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -87,6 +89,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\Scripts\Student Scripts\Questions.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\KidsCharacterFree\Documents\readme_txt.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />

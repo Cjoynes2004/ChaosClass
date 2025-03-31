@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed;
     public Transform orientation;
+    public bool canMove = true;
 
     public Gamestate Gamestatemanager;
 
@@ -42,7 +43,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        MovePlayer();
+        if (canMove)
+        {
+            MovePlayer();
+        }
     }
 
     private void GetInput()

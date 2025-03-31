@@ -2,9 +2,11 @@ using UnityEngine;
 
 public class StudentQuestion : MonoBehaviour
 {
+    public StressMeter stressMeter;
     public bool isQuestion = false;
     public bool isMisbehaving = false;
     private int chance = 10000;
+
     Animator animator;
     // Start is called before the first frame update
     void Start()
@@ -16,6 +18,10 @@ public class StudentQuestion : MonoBehaviour
     void Update()
     {
         studentPrompt();
+        if (isQuestion || isMisbehaving) 
+        {
+            stressMeter.IncreaseStress((float)(0.01 * Time.deltaTime));
+        }
     }
 
     void studentPrompt()

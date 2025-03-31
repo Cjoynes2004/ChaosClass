@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class Gamestate : MonoBehaviour
 {
-
     public bool Isgameover = false;  // Make sure this is public or use a property to get/set it
 
     // Start is called before the first frame update

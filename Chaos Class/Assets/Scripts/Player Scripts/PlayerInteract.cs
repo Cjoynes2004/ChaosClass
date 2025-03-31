@@ -8,6 +8,7 @@ public class PlayerInteract : MonoBehaviour
     public Transform cameraTransform; 
     public MeshFilter handMeshFilter;
     public MeshRenderer handMeshRenderer;
+    public QuestionManager questionManager;
 
     private InteractableObject heldObject = null;
     private Mesh defaultHandMesh;
@@ -132,7 +133,12 @@ public class PlayerInteract : MonoBehaviour
             {
                 if ((question.isQuestion && behavior) || (question.isMisbehaving && !behavior))
                 {
-                    question.CalledOn();
+                    if (question.isQuestion)
+                    {
+                        questionManager.AskQuestion();
+                    }
+
+                    question.CalledOn();                     
                 }
                 else if (question.isMisbehaving || question.isQuestion)
                 {

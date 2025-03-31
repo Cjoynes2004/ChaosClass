@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,6 +11,8 @@ public class StressMeter : MonoBehaviour
 
     public GameObject Gameoverpanel;
     public Gamestate Gamestatemanager;
+    public ToggleUI toggler;
+    private bool isGameOver;
 
     void Update()
     {
@@ -30,13 +33,18 @@ public class StressMeter : MonoBehaviour
 
     void Gameover()
     {
-        Gameoverpanel.SetActive(true);
-        Cursor.visible = true;       // Show the cursor
-        Cursor.lockState = CursorLockMode.None;
+        if (!isGameOver)
+        {
+            Gameoverpanel.SetActive(true);
+            if (toggler.isCrosshair)
+            {
+                toggler.SwitchUI();
 
-
-        Time.timeScale = 0f; // Pause the game
-        Debug.Log("Game Over! Game is now paused.");
+            }
+            Time.timeScale = 0f; // Pause the game
+            Debug.Log("Game Over! Game is now paused.");
+            isGameOver = true;
+        }
     }
 
 
