@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\KidsCharacterFree\Scripts\KidsScript.cs" />
+    <Compile Include="Assets\Scripts\RoundStartMessage.cs" />
     <Compile Include="Assets\Scripts\ChoiceSystem.cs" />
     <Compile Include="Assets\Scripts\Student Scripts\QuestionManager.cs" />
     <Compile Include="Assets\Scripts\ToggleUI.cs" />
@@ -108,8 +109,10 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\Orbitron\OFL.txt" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\Orbitron\README.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
