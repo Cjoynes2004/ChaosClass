@@ -12,7 +12,7 @@ public class StressMeter : MonoBehaviour
     public GameObject Gameoverpanel;
     public Gamestate Gamestatemanager;
     public ToggleUI toggler;
-    private bool isGameOver;
+    public bool isGameOver;
 
     void Update()
     {
@@ -44,6 +44,7 @@ public class StressMeter : MonoBehaviour
             Time.timeScale = 0f; // Pause the game
             Debug.Log("Game Over! Game is now paused.");
             isGameOver = true;
+            MusicManager.Instance.PlayGameOverMusic();
         }
     }
 

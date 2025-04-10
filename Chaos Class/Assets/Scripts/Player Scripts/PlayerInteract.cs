@@ -33,37 +33,40 @@ public class PlayerInteract : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (!FindObjectOfType<StressMeter>().isGameOver)
         {
-            if (heldObject == null)
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                TryPickupObject();
+                if (heldObject == null)
+                {
+                    TryPickupObject();
+                }
+                else
+                {
+                    DropObject();
+                }
             }
-            else
-            {
-                DropObject();
-            }
-        }
 
-        if (Input.GetMouseButton(0))
-        {
-            if (heldObject == null)
+            if (Input.GetMouseButton(0))
             {
-                CallOnStudent(true);
+                if (heldObject == null)
+                {
+                    CallOnStudent(true);
+                }
+                else
+                {
+                    heldObject.Interact();
+                }
             }
-            else
-            {
-                heldObject.Interact();
-            }   
-        }
 
-        if (Input.GetMouseButton(1))
-        {
-            if (heldObject == null)
+            if (Input.GetMouseButton(1))
             {
-                CallOnStudent(false);
-            }   
-        }
+                if (heldObject == null)
+                {
+                    CallOnStudent(false);
+                }
+            }
+        }   
     }
 
     void TryPickupObject()

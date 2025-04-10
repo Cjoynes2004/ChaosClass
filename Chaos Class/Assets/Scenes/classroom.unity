@@ -48841,7 +48841,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e284528d6f55c4cb3aec63d389a83f37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Isgameover: 0
 --- !u!1001 &1513641377
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58712,6 +58711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crosshair: {fileID: 685557190}
+  isCrosshair: 1
 --- !u!4 &1767178540
 Transform:
   m_ObjectHideFlags: 0
@@ -76141,6 +76141,50 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1254996834}
   m_SourcePrefab: {fileID: 100100000, guid: 73543e1548e024ee5a71c4c39766822b, type: 3}
+--- !u!1 &2111325733
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2111325735}
+  - component: {fileID: 2111325734}
+  m_Layer: 0
+  m_Name: MusicState
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2111325734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111325733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f327e2cede32d7e4c85e4d15c2a88389, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2111325735
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111325733}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 439.88483, y: 69.20834, z: 1693.127}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2119690973
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -79213,11 +79257,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AddStress: {fileID: 76632406622078438}
-  RateofIncrease: 0.05
+  RateofIncrease: 0
   MaxAmountofStress: 1
   Gameoverpanel: {fileID: 4767491617241994612}
   Gamestatemanager: {fileID: 1507748775}
   toggler: {fileID: 1767178539}
+  isGameOver: 0
 --- !u!1 &6988406823890486754
 GameObject:
   m_ObjectHideFlags: 0
@@ -80141,3 +80186,4 @@ SceneRoots:
   - {fileID: 621414756}
   - {fileID: 1312799288}
   - {fileID: 1767178540}
+  - {fileID: 2111325735}

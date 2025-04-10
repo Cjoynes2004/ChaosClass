@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class Gamestate : MonoBehaviour
 {
-    public bool Isgameover = false;  // Make sure this is public or use a property to get/set it
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +17,7 @@ public class Gamestate : MonoBehaviour
     public void Restartgame()
     {
         Debug.Log("Restart button clicked!");
-
+        MusicManager.Instance.PlayMainTheme();
 
         Time.timeScale = 1f; // Ensure the game is not paused
         SceneManager.LoadScene("classroom");
