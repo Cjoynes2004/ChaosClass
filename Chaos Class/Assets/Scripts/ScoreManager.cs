@@ -22,6 +22,7 @@ public class ScoreManager : MonoBehaviour
         Score.text = currentScore.ToString();
         //IncreaseScore();
         Debug.Log("printing");
+        //IncreaseScore();
     }
     void Start()
     {
@@ -85,4 +86,10 @@ public class ScoreManager : MonoBehaviour
         Time.timeScale = 1f; // Resume the game
                              // Reset other necessary game parameters here
     }
+    public int getHighestScore()
+    {
+        fetchHighScore(highScore);
+        return highest_score;
+    }
+
 }

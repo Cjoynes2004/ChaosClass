@@ -6,9 +6,9 @@ using System;
 using System.IO;
 using TMPro;
 
-public class ScoreManager : MonoBehaviour
+public class Score : MonoBehaviour
 {
-    public TextMeshProUGUI Score;
+    public TextMeshProUGUI Scores;
     private int currentScore;
     public int RateofIncrease = 10;
     public int highest_score;
@@ -19,13 +19,15 @@ public class ScoreManager : MonoBehaviour
     public StressMeter publisher;
     void Update()
     {
-        Score.text = currentScore.ToString();
+        Scores.text = currentScore.ToString();
+        //IncreaseScore();
+        Debug.Log("printing");
     }
     void Start()
     {
         ResetGame();
         currentScore = 0;
-        Score.text = currentScore.ToString();
+        Scores.text = currentScore.ToString();
         if (publisher != null)
         {
             publisher.OnNotify += Gameover;

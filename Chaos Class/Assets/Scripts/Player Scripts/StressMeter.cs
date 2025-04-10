@@ -1,23 +1,20 @@
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-
-public class StressMeter : MonoBehaviour
+using System;
+public class StressMeter : MonoBehaviour //handles stress, including its rate of increase, the level, max amount, and increase
 {
     public Image AddStress;
     private float LevelofStress = 0f;
-    public float RateofIncrease = 0f;
+    public float RateofIncrease = 0.1f;
     public float MaxAmountofStress = 1f;
 
     public GameObject Gameoverpanel;
     public Gamestate Gamestatemanager;
-    public ToggleUI toggler;
-    private bool isGameOver;
-
+    public event Action<string> OnNotify;
     void Update()
     {
 
-        LevelofStress += RateofIncrease * Time.deltaTime;
+        LevelofStress += RateofIncrease * Time.deltaTime; //Just a showcase that fills the stressmeter to activate the gameover menu
         LevelofStress = Mathf.Clamp(LevelofStress, 0f, MaxAmountofStress);
 
 
@@ -33,18 +30,15 @@ public class StressMeter : MonoBehaviour
 
     void Gameover()
     {
-        if (!isGameOver)
-        {
-            Gameoverpanel.SetActive(true);
-            if (toggler.isCrosshair)
-            {
-                toggler.SwitchUI();
+        Gameoverpanel.SetActive(true);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        Time.timeScale = 0f;
 
-            }
-            Time.timeScale = 0f; // Pause the game
-            Debug.Log("Game Over! Game is now paused.");
-            isGameOver = true;
-        }
+        Debug.Log("Game is over.");
+
+
+        OnNotify?.Invoke("Stress Maxed");
     }
 
 
@@ -59,4 +53,5 @@ public class StressMeter : MonoBehaviour
         LevelofStress -= amount;
         LevelofStress = Mathf.Clamp(LevelofStress, 0f, MaxAmountofStress);
     }
+
 }
