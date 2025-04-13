@@ -12,7 +12,7 @@ public class QuestionManager : MonoBehaviour
     public PlayerMovement player;
     public StressMeter stressMeter;
     public ToggleUI toggler;
-
+    public ScoreManager scoreManager;
     private int currIndex = 0;
     private List<Question> questions = new List<Question>();
     private int correctAnswer = 0;
@@ -70,6 +70,7 @@ public class QuestionManager : MonoBehaviour
         {
             Debug.Log("Correct Answer! Points awarded.");
             stressMeter.DecreaseStress((float)0.5);
+            scoreManager.IncreaseScore();
         }
         else
         {

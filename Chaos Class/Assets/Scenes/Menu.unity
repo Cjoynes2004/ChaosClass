@@ -387,6 +387,8 @@ GameObject:
   - component: {fileID: 446365882}
   - component: {fileID: 446365884}
   - component: {fileID: 446365883}
+  - component: {fileID: 446365885}
+  - component: {fileID: 446365886}
   m_Layer: 0
   m_Name: HighestScore
   m_TagString: Untagged
@@ -510,6 +512,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 446365881}
   m_CullTransparentMesh: 1
+--- !u!114 &446365885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446365881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3739371588c3e9e4cb221feab6a418f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreManager: {fileID: 446365886}
+  Score: {fileID: 446365883}
+--- !u!114 &446365886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446365881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d3d8ca32eedb68459df6d189295e313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Score: {fileID: 0}
+  RateofIncrease: 10
+  highest_score: 0
+  Gameoverpanel: {fileID: 0}
+  Gamestatemanager: {fileID: 0}
+  publisher: {fileID: 0}
 --- !u!1 &451548199
 GameObject:
   m_ObjectHideFlags: 0

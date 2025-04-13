@@ -65,11 +65,13 @@
     <Compile Include="Assets\Scripts\ChoiceSystem.cs" />
     <Compile Include="Assets\Scripts\Student Scripts\QuestionManager.cs" />
     <Compile Include="Assets\Scripts\ToggleUI.cs" />
+    <Compile Include="Assets\HighScoreScreen.cs" />
     <Compile Include="Assets\Scripts\GameEvents.cs" />
     <Compile Include="Assets\Scripts\Audio\MenuMusicState.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\Gamestate.cs" />
     <Compile Include="Assets\Scripts\Interactacbles\InteractableObject.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraPos.cs" />
+    <Compile Include="Assets\Scripts\ScoreManager.cs" />
     <Compile Include="Assets\Scripts\Student Scripts\StudentManager.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Phoenix3D\Demo\Scripts\MaterialSwithcer.cs" />
@@ -83,6 +85,7 @@
     <Compile Include="Assets\Scripts\Audio\SoundManager.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\PlayerInteract.cs" />
     <Compile Include="Assets\Scripts\Interactacbles\Chalkboard.cs" />
+    <Compile Include="Assets\Score.cs" />
     <Compile Include="Assets\Scripts\Main Menu\SceneLoader.cs" />
     <Compile Include="Assets\Scripts\Student Scripts\StudentQuestion.cs" />
     <Compile Include="Assets\Scripts\DialingSystem.cs" />
