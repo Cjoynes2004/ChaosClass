@@ -7,6 +7,7 @@ public class Chalkboard : MonoBehaviour
     [SerializeField] private Texture2D chalkTexture; // Chalkboard texture
     Renderer boardRenderer;
     private Color chalkColor = Color.white; // Chalk color
+    public ScoreManager scoreManager;
 
     private void Start()
     {
@@ -16,8 +17,16 @@ public class Chalkboard : MonoBehaviour
         {
             Debug.LogWarning("No main texture found on Chalkboard material. Creating a new writable texture.");
 
-            // Create a new blank texture (white background)
-            chalkTexture = new Texture2D(512, 512); // You can adjust the resolution
+            Vector3 boardSize = boardRenderer.bounds.size; // World space size
+            int pixelsPerUnit = 200; // Adjust based on how sharp you want it
+
+            int texWidth = Mathf.RoundToInt(boardSize.x * pixelsPerUnit);
+            int texHeight = Mathf.RoundToInt(boardSize.y * pixelsPerUnit);
+
+            chalkTexture = new Texture2D(texWidth, texHeight, TextureFormat.RGBA32, false);
+            chalkTexture.wrapMode = TextureWrapMode.Clamp;
+            chalkTexture.filterMode = FilterMode.Point;
+
             Color fillColor = Color.white;
             Color[] pixels = new Color[chalkTexture.width * chalkTexture.height];
 
@@ -56,22 +65,15 @@ public class Chalkboard : MonoBehaviour
 
     public void Draw(Vector2 textureCoord)
     {
-        int x = Mathf.RoundToInt(textureCoord.x * (chalkTexture.width - 1));
-        int y = Mathf.RoundToInt(textureCoord.y * (chalkTexture.height - 1));
+        int x = Mathf.RoundToInt(textureCoord.x * chalkTexture.width);
+        int y = Mathf.RoundToInt(textureCoord.y * chalkTexture.height);
 
-        Debug.Log($"Drawing at UV: {textureCoord}, Pixel: ({x}, {y})");
+        int px = Mathf.Clamp(x, 0, chalkTexture.width - 1);
+        int py = Mathf.Clamp(y, 0, chalkTexture.height - 1);
 
-        int brushSize = 3; // Adjust for thicker chalk strokes
-        for (int i = -brushSize; i <= brushSize; i++)
-        {
-            for (int j = -brushSize; j <= brushSize; j++)
-            {
-                int px = Mathf.Clamp(x + i, 0, chalkTexture.width - 1);
-                int py = Mathf.Clamp(y + j, 0, chalkTexture.height - 1);
-                chalkTexture.SetPixel(px, py, chalkColor);
-            }
-        }
+        chalkTexture.SetPixel(px, py, chalkColor);
+        chalkTexture.Apply();
+        scoreManager.IncreaseScore(1);
 
-        chalkTexture.Apply(); // Apply changes to update the texture
     }
 }
