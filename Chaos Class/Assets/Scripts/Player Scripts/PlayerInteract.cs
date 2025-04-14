@@ -9,6 +9,8 @@ public class PlayerInteract : MonoBehaviour
     public MeshFilter handMeshFilter;
     public MeshRenderer handMeshRenderer;
     public QuestionManager questionManager;
+    public ScoreManager scoreManager;
+
 
     private InteractableObject heldObject = null;
     private Mesh defaultHandMesh;
@@ -139,6 +141,10 @@ public class PlayerInteract : MonoBehaviour
                     if (question.isQuestion)
                     {
                         questionManager.AskQuestion();
+                    }
+                    else
+                    {
+                        scoreManager.IncreaseScore(50);
                     }
 
                     question.CalledOn();                     

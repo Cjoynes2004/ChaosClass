@@ -55,10 +55,10 @@ public class ScoreManager : MonoBehaviour
             writeToFile(highScore, currentScore);
         }
     }
-    public void IncreaseScore()
+    public void IncreaseScore(int score)
     {
 
-        currentScore += RateofIncrease;
+        currentScore += score;
         //currentScore = Mathf.Clamp(currentScore, 0, int.MaxValue);
     }
 

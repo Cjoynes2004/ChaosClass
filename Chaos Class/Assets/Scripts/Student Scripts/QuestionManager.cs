@@ -70,7 +70,7 @@ public class QuestionManager : MonoBehaviour
         {
             Debug.Log("Correct Answer! Points awarded.");
             stressMeter.DecreaseStress((float)0.5);
-            scoreManager.IncreaseScore();
+            scoreManager.IncreaseScore(100);
         }
         else
         {

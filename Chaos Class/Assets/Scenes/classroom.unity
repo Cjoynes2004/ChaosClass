@@ -17664,7 +17664,7 @@ Transform:
   m_GameObject: {fileID: 621414750}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7124548, y: 0, z: 0, w: 0.701718}
-  m_LocalPosition: {x: 413.8, y: 63.01, z: 1369.64}
+  m_LocalPosition: {x: 413.8, y: 60.23, z: 1369.64}
   m_LocalScale: {x: 1, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -59062,6 +59062,7 @@ MonoBehaviour:
   handMeshFilter: {fileID: 1130982703}
   handMeshRenderer: {fileID: 1130982702}
   questionManager: {fileID: 1561077930}
+  scoreManager: {fileID: 0}
 --- !u!1 &1767178538
 GameObject:
   m_ObjectHideFlags: 0
