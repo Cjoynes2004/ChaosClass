@@ -10,6 +10,7 @@ public class PlayerInteract : MonoBehaviour
     public MeshRenderer handMeshRenderer;
     public QuestionManager questionManager;
     public ScoreManager scoreManager;
+    public SFXManager sFXManager;
 
 
     private InteractableObject heldObject = null;
@@ -145,6 +146,7 @@ public class PlayerInteract : MonoBehaviour
                     else
                     {
                         scoreManager.IncreaseScore(50);
+                        sFXManager.PlayReprimand();
                     }
 
                     question.CalledOn();                     
@@ -153,6 +155,7 @@ public class PlayerInteract : MonoBehaviour
                 {
                     //Add taking away points.
                     StartCoroutine(studentManager.Cooldown(10));
+                    sFXManager.PlayErrorAudio();
                 }
             }
         }

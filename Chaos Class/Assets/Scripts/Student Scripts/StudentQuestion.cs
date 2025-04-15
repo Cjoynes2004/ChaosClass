@@ -6,12 +6,14 @@ public class StudentQuestion : MonoBehaviour
     public bool isQuestion = false;
     public bool isMisbehaving = false;
     private int chance = 10000;
+    public SFXManager sound;
 
     Animator animator;
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
+        sound = FindAnyObjectByType<SFXManager>();
     }
 
     // Update is called once per frame
@@ -36,11 +38,13 @@ public class StudentQuestion : MonoBehaviour
                 {
                     isQuestion = true;
                     animator.SetBool("handRaise", true);
+                    sound.PlayQuestion();
                 }
                 else
                 {
                     isMisbehaving = true;
                     animator.SetBool("misbehaving", true);
+                    sound.PlayMisbehave();
                 }
                 
             }

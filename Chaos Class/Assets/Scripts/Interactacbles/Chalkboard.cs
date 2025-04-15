@@ -6,8 +6,13 @@ public class Chalkboard : MonoBehaviour
 {
     [SerializeField] private Texture2D chalkTexture; // Chalkboard texture
     Renderer boardRenderer;
-    private Color chalkColor = Color.white; // Chalk color
+    private Color chalkColor = Color.black; // Chalk color
     public ScoreManager scoreManager;
+    public StressMeter stressMeter;
+    public SFXManager sound;
+    private int brushRadius = 3;
+    private float chalkSoundCooldown = 0.2f;
+    private float lastChalkSoundTime = 0f;
 
     private void Start()
     {
@@ -17,13 +22,7 @@ public class Chalkboard : MonoBehaviour
         {
             Debug.LogWarning("No main texture found on Chalkboard material. Creating a new writable texture.");
 
-            Vector3 boardSize = boardRenderer.bounds.size; // World space size
-            int pixelsPerUnit = 200; // Adjust based on how sharp you want it
-
-            int texWidth = Mathf.RoundToInt(boardSize.x * pixelsPerUnit);
-            int texHeight = Mathf.RoundToInt(boardSize.y * pixelsPerUnit);
-
-            chalkTexture = new Texture2D(texWidth, texHeight, TextureFormat.RGBA32, false);
+            chalkTexture = new Texture2D(512, 512, TextureFormat.RGBA32, false);
             chalkTexture.wrapMode = TextureWrapMode.Clamp;
             chalkTexture.filterMode = FilterMode.Point;
 
@@ -68,12 +67,27 @@ public class Chalkboard : MonoBehaviour
         int x = Mathf.RoundToInt(textureCoord.x * chalkTexture.width);
         int y = Mathf.RoundToInt(textureCoord.y * chalkTexture.height);
 
-        int px = Mathf.Clamp(x, 0, chalkTexture.width - 1);
-        int py = Mathf.Clamp(y, 0, chalkTexture.height - 1);
+        for (int i = -brushRadius; i <= brushRadius; i++)
+        {
+            for (int j = -brushRadius; j <= brushRadius; j++)
+            {
+                // Use a circle check to make the brush circular
+                if (i * i + j * j <= brushRadius * brushRadius)
+                {
+                    int px = Mathf.Clamp(x + i, 0, chalkTexture.width - 1);
+                    int py = Mathf.Clamp(y + j, 0, chalkTexture.height - 1);
+                    chalkTexture.SetPixel(px, py, chalkColor);
+                }
+            }
+        }
 
-        chalkTexture.SetPixel(px, py, chalkColor);
         chalkTexture.Apply();
         scoreManager.IncreaseScore(1);
-
+        stressMeter.DecreaseStress((float)0.03 * Time.deltaTime);
+        if (Time.time - lastChalkSoundTime >= chalkSoundCooldown)
+        {
+            sound.PlayChalkDraw();
+            lastChalkSoundTime = Time.time;  // Update the last sound play time
+        }
     }
 }

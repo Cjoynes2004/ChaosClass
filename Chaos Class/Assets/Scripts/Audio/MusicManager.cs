@@ -9,6 +9,7 @@ public class MusicManager : MonoBehaviour
     public AudioClip menuTheme;
     public AudioClip mainTheme;
     public AudioClip gameOverTheme;
+    public AudioClip misbehaveEffect;
 
     private AudioSource audioSource;
 
