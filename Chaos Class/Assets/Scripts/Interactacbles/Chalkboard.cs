@@ -6,7 +6,7 @@ public class Chalkboard : MonoBehaviour
 {
     [SerializeField] private Texture2D chalkTexture; // Chalkboard texture
     Renderer boardRenderer;
-    private Color chalkColor = Color.black; // Chalk color
+    private Color chalkColor = Color.white; // Chalk color
     public ScoreManager scoreManager;
     public StressMeter stressMeter;
     public SFXManager sound;
