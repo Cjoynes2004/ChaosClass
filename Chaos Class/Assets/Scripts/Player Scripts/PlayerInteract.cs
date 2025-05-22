@@ -75,7 +75,7 @@ public class PlayerInteract : MonoBehaviour
     void TryPickupObject()
     {
         GameObject target = null;
-        target = ReturnPlayerView(200);
+        target = ReturnPlayerView(400);
         if (target != null)
         {
             InteractableObject interactable = target.GetComponent<InteractableObject>();
@@ -154,7 +154,7 @@ public class PlayerInteract : MonoBehaviour
                 else if (question.isMisbehaving || question.isQuestion)
                 {
                     //Add taking away points.
-                    StartCoroutine(studentManager.Cooldown(10));
+                    StartCoroutine(studentManager.Cooldown(5));
                     sFXManager.PlayErrorAudio();
                 }
             }
