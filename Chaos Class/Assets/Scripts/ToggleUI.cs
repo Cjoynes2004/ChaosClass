@@ -7,6 +7,8 @@ public class ToggleUI : MonoBehaviour
 {
    public TMP_Text crosshair;
    public bool isCrosshair = true;
+   public bool noDrop = false;
+    public bool noCall = false;
    public void SwitchUI()
     {
         Cursor.visible = !(Cursor.visible);
@@ -20,5 +22,7 @@ public class ToggleUI : MonoBehaviour
         }
         crosshair.gameObject.SetActive(!isCrosshair);
         isCrosshair = !isCrosshair;
+        noDrop = !noDrop;
+        noCall = !noCall;
     }
 }

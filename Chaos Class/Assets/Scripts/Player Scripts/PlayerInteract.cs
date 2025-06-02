@@ -11,6 +11,8 @@ public class PlayerInteract : MonoBehaviour
     public QuestionManager questionManager;
     public ScoreManager scoreManager;
     public SFXManager sFXManager;
+    public StressMeter stressMeter;
+    public ToggleUI toggler;
 
 
     private InteractableObject heldObject = null;
@@ -38,7 +40,7 @@ public class PlayerInteract : MonoBehaviour
     {
         if (!FindObjectOfType<StressMeter>().isGameOver)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) && !toggler.noDrop) 
             {
                 if (heldObject == null)
                 {
@@ -132,7 +134,7 @@ public class PlayerInteract : MonoBehaviour
     private void CallOnStudent(bool behavior)
     {
         GameObject student = ReturnPlayerView(1000);
-        if (student != null && !studentManager.cooldown)
+        if (student != null && !studentManager.cooldown && !toggler.noCall)
         {
             StudentQuestion question = student.GetComponent<StudentQuestion>();
             if (student.GetComponent<StudentQuestion>() != null)
@@ -146,6 +148,7 @@ public class PlayerInteract : MonoBehaviour
                     else
                     {
                         scoreManager.IncreaseScore(50);
+                        stressMeter.DecreaseStress((float)0.15);
                         sFXManager.PlayReprimand();
                     }
 

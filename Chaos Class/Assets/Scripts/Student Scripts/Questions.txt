@@ -28,7 +28,7 @@ What creature is half man, half bull? | Minotaur | Centaur | Cyclops | Chimera
 Who is the father of Thor in Norse mythology? | Odin | Loki | Freyr | Heimdall
 What is the name of the Egyptian sun god? | Ra | Osiris | Anubis | Horus
 In Greek mythology, who opened a box unleashing evils upon the world? | Pandora | Medusa | Persephone | Helen
-What animal is known as man's best friend? | Dog | Cat | Horse | Pig
+Which of the following is a fish? | Shark | Whale | Dolphin | Octopus
 What do bees make? | Honey | Nectar | Syrup | Wax
 Which mammal can fly? | Bat | Penguin | Ostrich | Kangaroo
 What is the fastest land animal? | Cheetah | Lion | Horse | Greyhound
@@ -87,16 +87,16 @@ What comes next: 2, 4, 6, 8...? | 10 | 12 | 9 | 7
 If a triangle has three sides, how many does a hexagon have? | 6 | 5 | 8 | 4
 I speak without a mouth and hear without ears. What am I? | Echo | Shadow | Wind | Light
 A plane crashes on the border of the U.S. and Canada. Where do they bury the survivors? | Nowhere | U.S. | Canada | Border
-What has keys but can’t open doors? | Piano | Lock | Keyboard | Safe
+What has keys but cannot open doors? | Piano | Lock | Keyboard | Safe
 What punctuation ends a question? | Question mark | Period | Exclamation point | Comma
 Which part of speech describes a noun? | Adjective | Verb | Adverb | Preposition
 What is the past tense of run? | Ran | Runned | Running | Run
 What is it called when a sentence has two independent clauses joined improperly? | Run-on sentence | Metaphor | Fragment | Compound sentence
 What is the term for comparing two unlike things using like or as? | Simile | Metaphor | Hyperbole | Alliteration
 What planet do we live on? | Earth | Mars | Venus | Jupiter
-What do we call frozen water falling from the sky? | Snow | Hail | Ice | Rain
+How many continents are there? | 7 | 4 | 10 | 6
 What layer of the Earth do we live on? | Crust | Mantle | Core | Inner Core
-What causes tides in Earth's oceans? | Moon’s gravity | Sun’s heat | Wind | Earth’s rotation
+What causes tides in the ocean? | Moon’s gravity | Sun’s heat | Wind | Earth’s rotation
 Which galaxy is Earth located in? | Milky Way | Andromeda | Whirlpool | Sombrero
 
 

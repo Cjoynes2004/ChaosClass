@@ -2461,8 +2461,8 @@ MonoBehaviour:
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMin: 8
+  m_fontSizeMax: 36
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -6202,7 +6202,7 @@ MonoBehaviour:
   m_Color: {r: 0.7490196, g: 0.5264478, b: 0.039215676, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -37491,8 +37491,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.7330017, y: 0.3005}
+  m_SizeDelta: {x: 1.4660001, y: 0.601}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &901393140
 MonoBehaviour:
@@ -37541,12 +37541,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23.9
+  m_fontSize: 24.4
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMin: 8
+  m_fontSizeMax: 36
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -53450,7 +53450,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4558593196022300, guid: 991e8973513e2ad408232c1afeb3a9df, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.09
       objectReference: {fileID: 0}
     - target: {fileID: 4558593196022300, guid: 991e8973513e2ad408232c1afeb3a9df, type: 3}
       propertyPath: m_LocalRotation.w
@@ -63729,6 +63729,8 @@ MonoBehaviour:
   questionManager: {fileID: 1561077930}
   scoreManager: {fileID: 592040126}
   sFXManager: {fileID: 672572804}
+  stressMeter: {fileID: 6977815958245080772}
+  toggler: {fileID: 1767178539}
 --- !u!1 &1767178538
 GameObject:
   m_ObjectHideFlags: 0
@@ -63760,6 +63762,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crosshair: {fileID: 685557190}
   isCrosshair: 1
+  noDrop: 0
+  noCall: 0
 --- !u!4 &1767178540
 Transform:
   m_ObjectHideFlags: 0
@@ -67263,7 +67267,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4558593196022300, guid: 991e8973513e2ad408232c1afeb3a9df, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.12
       objectReference: {fileID: 0}
     - target: {fileID: 4558593196022300, guid: 991e8973513e2ad408232c1afeb3a9df, type: 3}
       propertyPath: m_LocalRotation.w
@@ -67402,8 +67406,8 @@ MonoBehaviour:
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMin: 8
+  m_fontSizeMax: 36
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -82356,8 +82360,8 @@ MonoBehaviour:
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMin: 8
+  m_fontSizeMax: 36
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -83668,6 +83672,7 @@ GameObject:
   - component: {fileID: 3745622628189001232}
   - component: {fileID: 5334037119566585998}
   - component: {fileID: 4539702728026225745}
+  - component: {fileID: 5334037119566585999}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -84792,6 +84797,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 832149484423911674}
   m_Mesh: {fileID: -5495902117074765545, guid: 4193b000406b34a40896cbfd83d54b1d, type: 3}
+--- !u!65 &5334037119566585999
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832149484423911674}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.3315935, y: 1.996057, z: 2.3315935}
+  m_Center: {x: 0, y: 0.0019716322, z: 0.0000076293945}
 --- !u!224 &5497889224994996426
 RectTransform:
   m_ObjectHideFlags: 0
