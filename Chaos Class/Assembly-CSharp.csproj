@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\RoundStartMessage.cs" />
     <Compile Include="Assets\Scripts\Student Scripts\QuestionManager.cs" />
     <Compile Include="Assets\Scripts\ToggleUI.cs" />
+    <Compile Include="Assets\Scripts\Main Menu\FetchHighScore.cs" />
     <Compile Include="Assets\HighScoreScreen.cs" />
     <Compile Include="Assets\Scripts\Interactacbles\DialingSystem.cs" />
     <Compile Include="Assets\Scripts\Audio\MenuMusicState.cs" />
