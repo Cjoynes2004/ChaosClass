@@ -83,7 +83,11 @@ public class Chalkboard : MonoBehaviour
 
         chalkTexture.Apply();
         scoreManager.IncreaseScore(1);
-        stressMeter.DecreaseStress((float)0.03 * Time.deltaTime);
+        if (stressMeter.LevelofStress < stressMeter.MaxAmountofStress)
+        {
+            stressMeter.DecreaseStress((float)0.03 * Time.deltaTime);
+
+        }
         if (Time.time - lastChalkSoundTime >= chalkSoundCooldown)
         {
             sound.PlayChalkDraw();

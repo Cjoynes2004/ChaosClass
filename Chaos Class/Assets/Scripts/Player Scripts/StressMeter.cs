@@ -4,7 +4,7 @@ using System;
 public class StressMeter : MonoBehaviour //handles stress, including its rate of increase, the level, max amount, and increase
 {
     public Image AddStress;
-    private float LevelofStress = 0f;
+    public float LevelofStress = 0f;
     public float RateofIncrease = 0.1f;
     public float MaxAmountofStress = 1f;
 
