@@ -10,6 +10,7 @@ public class MusicManager : MonoBehaviour
     public AudioClip mainTheme;
     public AudioClip gameOverTheme;
     public AudioClip misbehaveEffect;
+    public AudioClip howtoplayTheme;
 
     private AudioSource audioSource;
 
@@ -41,7 +42,10 @@ public class MusicManager : MonoBehaviour
     {
         PlayClip(gameOverTheme);
     }
-
+    public void PlayHowToPlayMusic()
+    {
+        PlayClip(howtoplayTheme);
+    }
     private void PlayClip(AudioClip clip)
     {
         if (clip == null || audioSource.clip == clip) return;

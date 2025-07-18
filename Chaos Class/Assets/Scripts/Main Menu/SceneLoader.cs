@@ -10,6 +10,16 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene("classroom");
     }
 
+    public void LoadHowToPlay()
+    {
+        SceneManager.LoadScene("howtoplay");
+    }
+
+    public void LoadMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
     public void QuitGame()
     {
         Application.Quit();

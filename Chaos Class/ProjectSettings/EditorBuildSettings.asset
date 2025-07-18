@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/classroom.unity
     guid: b9c8e29228272874592d770a2372f720
+  - enabled: 1
+    path: Assets/Scenes/howtoplay.unity
+    guid: a5db57fbcae87a642adad6ad6400f38e
   m_configObjects: {}
